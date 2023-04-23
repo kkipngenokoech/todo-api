@@ -5,3 +5,4 @@ djangorestframework
 pytz
 sqlparse
 gunicorn
+whitenoise

@@ -1,0 +1,7 @@
+services:
+  - name: web
+    # ...
+    env:
+      DJANGO_SETTINGS_MODULE: _todos.settings.production
+      DISABLE_COLLECTSTATIC: 1
+    # ...
