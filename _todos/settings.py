@@ -33,7 +33,9 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     # local applications
     'todos',
-    
+
+    # third party applications
+    'rest_framework',
     # inbuilt applications
     'django.contrib.admin',
     'django.contrib.auth',
@@ -42,6 +44,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+      'rest_framework.permissions.AllowAny',
+    ]
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -109,7 +117,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Africa/Nairobi'
 
 USE_I18N = True
 
